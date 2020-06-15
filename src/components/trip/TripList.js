@@ -1,9 +1,9 @@
 import React from "react";
 import {Trip} from "./Trip";
 
-export const TripList = ({trip}) => {
+export const TripList = ({trips}) => {
     return (
-        <div className="trip-list">
+        <div className="trips-list">
             <h3>Trips</h3>
             <table className="table">
                 <thead>
@@ -15,7 +15,7 @@ export const TripList = ({trip}) => {
                     </tr>
                 </thead>
                 <tbody>
-                    {trip.map((trip) => (
+                    {trips.map((trip) => (
                         <Trip {...trip} />
                     ))}
                 </tbody>

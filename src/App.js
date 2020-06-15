@@ -1,13 +1,11 @@
-import React from 'react';
-import {Nav} from "./components/Nav";
-import {BrowserRouter as Router , Route ,Switch} from "react-router-dom";
-import {AddTrip} from "./components/trip/AddTrip";
-import {TripList} from "./components/trip/TripList";
+import React from "react";
+import { Nav } from "./components/Nav";
+import { BrowserRouter as Router , Route , Switch } from "react-router-dom";
+import { AddTrip } from "./components/trip/AddTrip";
+import { TripList } from "./components/trip/TripList";
 
-export class App extends React.Component 
-{
-  constructor(props)
-  {
+export class App extends React.Component {
+  constructor(props){
     super(props);
     this.state = {
       allTrips : [
@@ -21,11 +19,10 @@ export class App extends React.Component
   this.addTrip = this.addTrip.bind(this); 
   }
 
-  addTrip(newTrip)
-  {
-    this.setState((prevstate) => {
+  addTrip(newTrip){
+    this.setState((prevState) => {
       return {
-        allTrips:[...prevstate.allTrips,newTrip],
+        allTrips:[...prevState.allTrips,newTrip],
       };
     });
   }

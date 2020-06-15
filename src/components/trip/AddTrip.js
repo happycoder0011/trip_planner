@@ -17,17 +17,17 @@ export const AddTrip = ({AddNewTrip}) => {
             <form onSubmit={submit} className="form black-container">
                 <label>
                     <h3>Add A trip</h3>
-                    <br/>
-                    <br/>
-                    <br/>
+                    <br />
+                    <br />
+                    <br />
                 </label>
                 <label>
-                Date:<br/>
+                Date:<br />
                 <input
                     id ="date"
                     type = "date"
                     required
-                    ref = {(input) => (date=input)}
+                    ref = {(input) => (date = input)}
                     />
                 </label>
                 <label>
